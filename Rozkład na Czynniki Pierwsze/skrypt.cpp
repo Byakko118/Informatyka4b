@@ -8,7 +8,10 @@ int main() {
     cin >> n;
     while(n>1){
         while(n%k == 0){
-			cout << k << ", ";
+			cout << k;
+			if(k != n){
+				cout << ", ";
+			}
 			n = n/k;
         }
     k = k+1;
